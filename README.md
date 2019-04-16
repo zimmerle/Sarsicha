@@ -5,7 +5,7 @@ Disclaimer: This meant to be an educational platform where different pieces of a
 a case of study to help taking down botnets in general.
 
 
-### About a c&c and botnet
+### About c&c and botnet
 
 In the beginning, a botnet where high hierarchical infrastructure where a *command control* is placed as a *masterpiece* delivering content to zombie nodes, sometimes even in plain sight - text/plain in IRC networks. No need to mention that those were not difficult to be taken apart, as for identifying the infected machine was about to identify the connection to the IRC network.
 It was also easy to take over the nodes as the level of authentication of the owner was - intentionally or not - very basic.
@@ -52,9 +52,12 @@ The code base has a node simulator in python, that can be used to test the curre
 The peers are not yet authenticating themselves. Web Of Trust should be added in order to authenticate which of the peers.
 
 
-### Examples
+### Before start
 
-#### Running the proxy node
-#### The proxy node cli
-#### Running the node simulator
+Make sure you have created the database tables:
 
+```bash
+python db.py
+```
+
+Plase change the [defaul-node.yaml](https://github.com/zimmerle/Sarsicha/blob/master/default-node.yaml) and [default-proxy.yaml](https://github.com/zimmerle/Sarsicha/blob/master/default-proxy.yaml) according to your setup.
