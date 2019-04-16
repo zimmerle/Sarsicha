@@ -1,0 +1,13 @@
+
+node:
+    id: cdf9a1aed9a4049a433a8b1923e02964c614f9021675494d9e4e3d572c4646ba
+    communications:
+        - plain
+        - WoT
+        - steganography
+    debug: 1
+    plain: http://10.10.10.22:8080
+    key: quake
+    
+proxy:
+    database: tweepee.db
